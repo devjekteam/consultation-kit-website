@@ -163,57 +163,59 @@ body {
 .icon-bar{
     background: #fff
 }
-
-.download {
-    color: #ffffff;
+.subscription-form-container {
+    padding: 25px;
 }
-
-.download .solid-color {
-    padding-top: 110px;
-    padding-bottom: 70px;
-}
-
-.download .download-container {
-    padding-bottom: 80px;
-}
-
-.download .subscription-form-container {
-    padding-bottom: 80px;
-}
-.download .subscription-form-container h2{
+.subscription-form-container h2{
     font-weight: 300;
     font-size: 36px;
     margin: 0;
 }
-.download .subscription-form-container p{
+.subscription-form-container p{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: #666;
 }
 
-.download .subscription-form .input-box {
+.input-and-button {
+    display: flex;
+}
+
+.input-and-button .btn-subscribe {
+    width: auto;
+    padding: 15px 45px;
+    margin-left: 10px;
+}
+
+.subscription-form .input-box {
     height: 57px;
     padding-left: 20px;
+    flex: 1;
     -webkit-box-shadow: none;
     box-shadow: none;
     background: #FFF;
-    border: 2px solid #FFF;
+    border: 2px solid #eee;
 }
 
-.download .subscription-form .input-box:focus,
-.download .subscription-form .input-box:active {
+.subscription-form .input-box:focus,
+.subscription-form .input-box:active {
     color: #000;
     font-weight: 400;
 }
 
-.download .subscription-form .subscription-success,
-.download .subscription-form .subscription-error {
+.subscription-form .subscription-success,
+.subscription-form .subscription-error {
     display: none;
+    font-size: 15px;
+    line-height: 19px;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 1px;
+
 }
 
-.download h2 {
-    margin-bottom: 30px;
-}
 .standard-button {
     background: #005885;
 }
@@ -379,6 +381,11 @@ footer .copyright {
 .plan ul li:last-child {
     border: none;
 }
+
+.modal-title {
+    color: #666;
+}
+
 @media (min-width: 768px){
     .hero {
         padding-top: 0px;
