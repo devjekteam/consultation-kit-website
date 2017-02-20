@@ -33,13 +33,13 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		ga('create', '', 'auto');
-		ga('send', 'pageview');
+	  ga('create', 'UA-92282541-1', 'auto');
+	  ga('send', 'pageview');
 
 	</script>
 </head>
@@ -290,7 +290,7 @@
 							<li>Can't ask for extra information in the form</li>
 							<li>"Powered by Consultation Kit" branding</li>
 						</ul>
-						<a class="btn btn-get-started" href="/signup">Get Started</a>
+						<div data-plan="free" class="btn btn-get-started">Get Started</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
@@ -305,7 +305,7 @@
 							<li>Ask for extra information in the form</li>
 							<li>Remove "Powered by Consultation Kit" branding</li>
 						</ul>
-						<a class="btn btn-get-started" href="/signup">Get Started</a>
+						<div data-plan="standard" class="btn btn-get-started">Get Started</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
@@ -320,7 +320,7 @@
 							<li>Ask for extra information in the form</li>
 							<li>Remove "Powered by Consultation Kit" branding</li>
 						</ul>
-						<a class="btn btn-get-started" href="/signup">Get Started</a>
+						<div data-plan="pro" class="btn btn-get-started">Get Started</div>
 					</div>
 				</div>
 
@@ -381,6 +381,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	$( document ).ready(function() {
+
+		$('.btn-get-started').on('click', function() {
+			const eventType = $(this).data().plan;
+
+			// send event to google analytics on singup
+			ga('send', 'event', 'Buy Plan', eventType);
+
+			window.location.replace('http://consultationkit.com/signup');
+		})
 		/* =================================
 		 ===  MAILCHIMP                 ====
 		 =================================== */
