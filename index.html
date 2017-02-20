@@ -296,10 +296,10 @@
 				<div class="col-sm-4">
 					<div class="plan">
 						<h2>Standard</h2>
-						<h3>$25</h3>
+						<h3>$29</h3>
 						<span>/month</span>
 						<ul>
-							<li>30 consultations</li>
+							<li>50 consultations</li>
 							<li>Accept Payments</li>
 							<li>Send Reminders</li>
 							<li>Ask for extra information in the form</li>
@@ -311,7 +311,7 @@
 				<div class="col-sm-4">
 					<div class="plan">
 						<h2>Pro</h2>
-						<h3>$49</h3>
+						<h3>$99</h3>
 						<span>/month</span>
 						<ul>
 							<li>Unlimited Consultations</li>
@@ -408,8 +408,11 @@
 <script type="text/javascript">
 	$( document ).ready(function() {
 
+		var selectedPlan = null;
+
 		$('.btn-get-started').on('click', function() {
-			const eventType = $(this).data().plan;
+			selectedPlan = $(this).data().plan
+			const eventType = selectedPlan;
 
 			// send event to google analytics on singup
 			ga('send', 'event', 'Buy Plan', eventType);
@@ -433,6 +436,8 @@
 
 				$('.input-and-button').hide();
 				$('#signup-description').hide();
+
+				ga('send', 'event', 'Email Signup', selectedPlan);
 
 			} else if(resp.result === 'error') {
 				$('.subscription-error').html('<i class="icon_close_alt2"></i><br/>' + resp.msg).fadeIn(1000);
