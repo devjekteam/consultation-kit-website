@@ -100,6 +100,7 @@ body {
     color: #008ed6;
     font-weight: 200;
     font-size: 26px;
+    text-align: center;
 }
 .explainer p{
     font-size: 17px;
@@ -121,8 +122,8 @@ body {
 }
 .heading h5{
     color: #666;
-    font-size: 22px;
-    font-weight: 200;
+    font-size: 17px;
+    font-weight: 300;
 }
 .benefits{
     margin-bottom: 25px;
@@ -162,6 +163,14 @@ body {
 }
 .icon-bar{
     background: #fff
+}
+.icon.big {
+    height: 80px;
+    width: 80px;
+    line-height: 75px;
+}
+.icon.big i {
+    font-size: 28px;
 }
 .subscription-form-container {
     padding: 25px;
@@ -388,6 +397,11 @@ footer .copyright {
 #demo {
     width: 100%;
 }
+#try-callout {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+}
 @media (min-width: 768px){
     .hero {
         padding-top: 0px;
@@ -417,5 +431,8 @@ footer .copyright {
     .standard-button{
         margin: 5px;
         display: inline-block;
+    }
+    #try-callout {
+        left: -70px;
     }
 }
