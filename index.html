@@ -33,7 +33,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/booking.js"></script>
-	<!--
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -44,7 +44,7 @@
 	  ga('send', 'pageview');
 
 	</script>
--->
+
 </head>
 
 <body>
@@ -421,7 +421,7 @@
 			const eventType = selectedPlan;
 
 			// send event to google analytics on singup
-			//ga('send', 'event', 'Buy Plan', eventType);
+			ga('send', 'event', 'Buy Plan', eventType);
 
 			$('#signup').modal('show')
 		})
@@ -443,7 +443,7 @@
 				$('.input-and-button').hide();
 				$('#signup-description').hide();
 
-				//ga('send', 'event', 'Email Signup', selectedPlan);
+				ga('send', 'event', 'Email Signup', selectedPlan);
 
 			} else if(resp.result === 'error') {
 				$('.subscription-error').html('<i class="icon_close_alt2"></i><br/>' + resp.msg).fadeIn(1000);
@@ -539,8 +539,8 @@
 		},
 		avatar: 'images/demo-consultant.jpg',
 		createBooking: function (data) {
-			//ga('send', 'event', 'Booking Created');
-			console.log(data);
+			ga('send', 'event', 'Booking Created');
+
 			return Promise.resolve(data)
 		}, // must return a promise
 		getEvents: function (data) { return createFakeEvents(1000)},
