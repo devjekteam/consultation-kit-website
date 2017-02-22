@@ -404,6 +404,7 @@ footer .copyright {
 }
 #demo {
     width: 100%;
+    min-height: 500px;
 }
 #try-callout {
     position: absolute;
