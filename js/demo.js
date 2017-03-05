@@ -47,20 +47,24 @@ function consultationKitDemo() {
 
     function getAvailabilities(days, times) {
         var firstDate = toNearestHour(new Date());
+        const availabiliyPromises = []
 
         for (var i = 0; i < days; i++) {
-          start_datetime = RFC3339DateString(addDay(firstDate, i))
-
-          $.ajax({'url': 'http://localhost:5000/calendars/1/availabilities?start_datetime=' + start_datetime, 'type':'GET',
-                  'headers': {
-                    "authorization": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0ODkwMjk2MzUwMDAsInVzZXJfaWQiOjF9.ZKAou1oJ6aI93Wp7ooqSgTsQ65v97J22YGrBwvQf0cw'
-                  },
-                  success: function(result) {
-                    addToTimes(result.availabilities, times)
+          const start_datetime = RFC3339DateString(addDay(firstDate, i))
+          availabiliyPromises.push(
+            $.ajax({'url': 'http://localhost:5000/calendars/2/availabilities?start_datetime=' + start_datetime, 'type':'GET',
+                    'headers': {
+                      "authorization": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0ODkwMjk2MzUwMDAsInVzZXJfaWQiOjF9.ZKAou1oJ6aI93Wp7ooqSgTsQ65v97J22YGrBwvQf0cw'
+                    },
+                    success: function(result) {
+                      addToTimes(result.availabilities, times)
+                    }
                   }
-                }
+                )
               );
         }
+
+        return availabiliyPromises;
     };
 
     flBooking({
@@ -100,6 +104,17 @@ function consultationKitDemo() {
                 enabled: false
             }
         },
+        fullCalendar: {
+            weekends: true,
+            views: {
+                agenda: {
+                    slotDuration: '00:10:00',
+                    slotLabelFormat: 'h:mm',
+                    minTime: "08:00:00",
+                    maxTime: "20:00:00"
+                }
+            }
+        },
         localization: {
             showTimezoneHelper: true,
             timeDateFormat: '12h-mdy-sun',
@@ -124,8 +139,7 @@ function consultationKitDemo() {
             let times = [];
             const availPromises = getAvailabilities(7, times);
 
-            return $.when(availPromises).done(function() {
-              console.log(times);
+            return $.when.apply($, availPromises).then(function() {
               return {data: times};
             });
         },
