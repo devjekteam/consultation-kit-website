@@ -357,7 +357,7 @@ footer .copyright {
 }
 .plan h3 {
     color: #3498db;
-    font-size: 30px;
+    font-size: 20px;
 }
 .plan span {
     color: #666;
@@ -376,6 +376,7 @@ footer .copyright {
     text-align: left;
     font-size: 14px;
     font-weight: 300;
+    text-align: center;
 }
 .plan ul li:last-child {
     border: none;

@@ -76,7 +76,7 @@
 				</div>
 			</div>
 			<div class="action-btns">
-				<a class="btn btn-pricing" href="#plans">See Plans &amp; Pricing</a>
+				<a class="btn btn-pricing" href="#plans">Get Started</a>
 			</div>
 			<div class="desktop fadeInLeft animated">
 				<img id="try-callout" class="hidden-sm hidden-xs" src="images/try-callout.png">
@@ -121,7 +121,7 @@
 	<div class="container">
 		<div class="heading text-center">
 			<h1>Powerful Features</h1>
-			<h5>Everything you need. Nothing you don't.</h5>
+			<h5>Everything you need to streamline your booking process. Set it and forget it</h5>
 		</div>
 		<div class="row benefits">
 			<div class="col-sm-6 benefit">
@@ -129,7 +129,7 @@
 					<i class="fa fa-users"></i>
 				</div>
 				<h4>Stay In Sync</h4>
-				<p>We sync directly with your google calendar so you never miss a meeting
+				<p>We sync directly with your Google Calendar so you never miss a meeting
 				</p>
 			</div>
 			<div class="col-sm-6 benefit">
@@ -177,109 +177,24 @@
 <section class="solid-color" id="plans">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-md-8 col-md-offset-2">
 					<div class="plan">
-						<h2>Free</h2>
-						<h3>$0</h3>
-						<span>/month</span>
-						<ul>
-							<li>5 consultations</li>
-							<li>Accept Payments</li>
-							<li>Send Reminders</li>
-							<li>Can't ask for extra information in the form</li>
-							<li>"Powered by Consultation Kit" branding</li>
-							<li>30-day free trial. No cc required!</li>
-						</ul>
-						<div data-plan="free" class="btn btn-get-started">Get Started</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="plan">
-						<h2>Standard</h2>
-						<h3>$29</h3>
-						<span>/month</span>
-						<ul>
-							<li>50 consultations</li>
-							<li>Accept Payments</li>
-							<li>Send Reminders</li>
-							<li>Ask for extra information in the form</li>
-							<li>Remove "Powered by Consultation Kit" branding</li>
-							<li>30-day free trial. No cc required!</li>
-						</ul>
-						<div data-plan="standard" class="btn btn-get-started">Get Started</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="plan">
-						<h2>Pro</h2>
-						<h3>$99</h3>
-						<span>/month</span>
+						<h2>Pays For Itself With 1 Booking</h2>
+						<h3>The cost of a single appointment every month gets you:</h3>
 						<ul>
 							<li>Unlimited Consultations</li>
-							<li>Accept Payments</li>
-							<li>Send Reminders</li>
-							<li>Ask for extra information in the form</li>
-							<li>Remove "Powered by Consultation Kit" branding</li>
+							<li>Accept Payments Up Front From Clients</li>
+							<li>Automatic Reminders</li>
+							<li>Integration with Google Calendar</li>
+							<li>No Hassle and Easy to Manage</li>
 							<li>30-day free trial. No cc required!</li>
 						</ul>
-						<div data-plan="pro" class="btn btn-get-started">Get Started</div>
+						<a data-plan="standard" class="btn btn-get-started" href="https://app.consultationkit.com">Get Set Up for Free</a>
 					</div>
 				</div>
 			</div>
 		</div>
 </section>
-
-<!-- Signup Modal -->
-<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">Get Started</h4>
-			</div>
-			<div class="modal-body">
-					<div class="subscription-form-container animated">
-						<form id="mailchimp" class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
-							<h4 class="subscription-success"></h4>
-							<h4 class="subscription-error"></h4>
-							<div id="signup-form-inputs">
-								<div class="input-row row">
-									<div class="col-sm-6">
-										<label>First Name</label>
-										<input type="text" id="FNAME" name="FNAME" class="form-control input-box" placeholder="John">
-									</div>
-									<div class="col-sm-6">
-										<label>Last Name</label>
-										<input type="text" id="LNAME" name="LNAME" class="form-control input-box" placeholder="Doe">
-									</div>
-								</div>
-								<div class="input-row">
-									<label>Company Name</label>
-									<input type="text" id="COMPANY" name="COMPANY" class="form-control input-box" placeholder="Acme Inc.">
-								</div>
-								<div class="input-row">
-									<label>Email Address</label>
-									<input type="text" id="EMAIL" name="EMAIL" class="form-control input-box" placeholder="john.doe@acmeinc.com">
-								</div>
-								<div class="input-row">
-									<label>Calendar you use</label>
-									<input type="text" id="CALENDAR" name="CALENDAR" class="form-control input-box" placeholder="Google Calendar, iCloud Calendar, Outlook, other">
-								</div>
-								<div class="input-row">
-									<label>Payment Provider you use</label>
-									<input type="text" id="PAYMENT" name="PAYMENT" class="form-control input-box" placeholder="PayPal, Stripe, Other">
-								</div>
-								<input type="hidden" id="plan" name="PLAN" value="Free">
-								<div class="button-container text-center">
-									<button type="submit" id="subscribe-button" class="btn btn-subscribe">Submit</button>
-								</div>
-							</div>
-						</form>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!-- =========================
      FOOTER
@@ -334,8 +249,6 @@
 
 			// send event to google analytics on singup
 			ga('send', 'event', 'Buy Plan', selectedPlan);
-
-			$('#signup').modal('show')
 		})
 		/* =================================
 		 ===  MAILCHIMP                 ====
