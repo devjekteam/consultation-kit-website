@@ -427,3 +427,31 @@ footer .copyright {
         left: -70px;
     }
 }
+
+/* FAQ */
+
+.faq {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.faq ul {
+  list-style: none;
+}
+
+.faq li {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.faq ul li span {
+  font-size: 30px;
+  color: #3498db;
+}
+
+.faq ul li p {
+  font-size: 20px;
+  color: #555;
+  margin-left: 10px;
+  margin-top: 10px;
+}
