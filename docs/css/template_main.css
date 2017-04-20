@@ -1,0 +1,430 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.solid-color{
+    background: rgba(51,153,204, 1);
+}
+.see-through-blue{
+    background: rgba(51,153,204, 0.75);
+}
+.navbar-brand{
+    line-height: 63px;
+    height: auto;
+    padding-top: 25px;
+}
+.navbar-nav > li > a{
+    line-height: 63px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.navbar-nav > li > a:hover {
+    background: transparent;
+    color: #fff;
+    border-top: 5px solid #fff;
+    line-height: 55px;
+}
+.navbar-nav > li > a:focus, .navbar-nav > li > a:active{
+    background: transparent;
+    color: #fff;
+}
+.hero{
+    color: #fff;
+}
+.hero h1{
+    font-weight: 200
+}
+.hero h5{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+#home{
+    background: url('../images/bg.jpg');
+    background-size: cover;
+}
+.phone{
+    padding: 50px 15px;
+    margin: 45px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 267px;
+    /*height: 553px;*/
+    align-items: center;
+    border-radius: 38px;
+    background: #fff;
+    box-shadow: inset 0 4px 7px 1px #fff,inset 0 -5px 20px rgba(173,186,204,.25),0 2px 6px rgba(0,21,64,.14),0 10px 20px rgba(0,21,64,.05);
+}
+.desktop{
+    margin: 10px auto 0;
+    max-width: 972px;
+    position: relative;
+}
+.featured{
+    padding: 30px 0;
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+.explainer {
+    padding: 10px;
+    text-align: center;
+}
+.explainer h2{
+    color: #008ed6;
+    font-weight: 200;
+    font-size: 26px;
+    text-align: center;
+}
+.explainer p{
+    font-size: 17px;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+.gray{
+    background: #f6f9fc;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.heading{
+    padding-bottom: 35px;
+}
+.heading h1{
+    font-weight: 200;
+    color: #3498db;
+}
+.heading h5{
+    color: #666;
+    font-size: 17px;
+    font-weight: 300;
+}
+.benefits{
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+.benefit{
+    padding: 20px 50px;
+    color: #666;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    text-align: center;
+
+}
+.benefit h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    color: #3498db;
+}
+.benefit:first-child{
+    border-right: 1px solid #cecece;
+}
+.icon {
+    background: #008ed6;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px auto 15px;
+}
+.icon i {
+    vertical-align: middle;
+    color: #fff;
+}
+.icon-bar{
+    background: #fff
+}
+.icon.big {
+    height: 80px;
+    width: 80px;
+    line-height: 75px;
+}
+.icon.big i {
+    font-size: 28px;
+}
+.subscription-form-container {
+    padding: 0 25px;
+}
+.subscription-form-container h2{
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0;
+}
+.subscription-form-container p{
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: #666;
+}
+.input-row {
+    margin-bottom: 10px;
+}
+.input-row label {
+    color: #666;
+}
+
+.input-and-button {
+    display: flex;
+}
+
+.input-and-button .btn-subscribe {
+    width: auto;
+    padding: 15px 45px;
+    margin-left: 10px;
+}
+
+.subscription-form .input-box {
+    height: 57px;
+    padding-left: 20px;
+    flex: 1;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #FFF;
+    border: 2px solid #eee;
+}
+
+.subscription-form .input-box:focus,
+.subscription-form .input-box:active {
+    color: #000;
+    font-weight: 400;
+}
+
+.subscription-form .subscription-success,
+.subscription-form .subscription-error {
+    display: none;
+    font-size: 15px;
+    line-height: 19px;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+.standard-button {
+    background: #005885;
+}
+
+.standard-button, .standard-button2 {
+    font-size: 18px;
+    font-weight: 400 !important;
+    border-radius: 4px !important;
+    text-shadow: 0 !important;
+    color: #ffffff;
+    min-width: 150px;
+    border: none;
+    padding: 16px 25px 16px 25px;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+    margin: 10px auto;
+    display: block;
+}
+footer{
+    padding: 30px;
+}
+
+footer .copyright {
+    color: #808080;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.skew-right{
+    transform: rotate(4deg);
+}
+.skew-left{
+    transform: rotate(-4deg);
+}
+.social-icons-list a{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.navbar-toggle {
+    margin-top: 28px;
+    margin-right: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.download-btns {
+    padding: 15px;
+}
+.btn-app-store, .btn-play-store {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn-app-store, .btn-play-store {
+    background: #fff;
+    color: #444;
+    position: relative;
+    height: 60px;
+    padding-left: 55px;
+    padding-right: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn-app-store i, .btn-play-store i {
+    font-size: 36px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #3498db;
+}
+
+.btn-app-store .small, .btn-play-store .small {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.btn-app-store .big, .btn-play-store .big {
+    display: block;
+    text-align: left;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 600;
+}
+.action-btns {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-pricing {
+    padding: 10px 18px;
+    background: #fff;
+    color: #008ed6;
+}
+.btn-get-started, .btn-subscribe {
+    background: #3498db;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    max-width: 300px;
+}
+#plans {
+    padding: 30px;
+}
+.plan {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.plan h2 {
+    color: #666;
+    font-size: 30px;
+    font-weight: 200;
+}
+.plan h3 {
+    color: #3498db;
+    font-size: 20px;
+    font-weight: 300;
+}
+.plan span {
+    color: #666;
+}
+.plan ul {
+    padding: 0;
+    margin: 0 0 10px;
+    list-style-type: none;
+    width: 100%;
+}
+.plan ul li {
+    padding: 10px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+.plan ul li:last-child {
+    border: none;
+}
+
+.modal-title {
+    color: #666;
+}
+#demo {
+    width: 100%;
+    margin-top: 60px;
+}
+#try-callout {
+    position: absolute;
+    left: 0px;
+    top: -120px;
+}
+@media (min-width: 768px){
+    .hero {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .hero h1{
+        font-size: 45px;
+    }
+    .pull-phone{
+        margin-top: -100px;
+    }
+    .explainer {
+        padding: 20px;
+        text-align: left;
+    }
+    .benefit{
+        text-align: left;
+    }
+    .benefit .icon {
+        float: left;
+        margin-right: 30px;
+        margin-top: 25px;
+    }
+    .download .subscription-form .input-box {
+        width: 70%;
+    }
+    .standard-button{
+        margin: 5px;
+        display: inline-block;
+    }
+    #try-callout {
+        left: -70px;
+    }
+}
