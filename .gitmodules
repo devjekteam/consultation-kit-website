@@ -1,0 +1,3 @@
+[submodule "themes/berawa"]
+	path = themes/berawa
+	url = git@github.com:sipplified/berawa.git
