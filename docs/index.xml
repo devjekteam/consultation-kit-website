@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consultation Kit</title>
+    <link>http://consultationkit.com/</link>
+    <description>Recent content on Consultation Kit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>info@consultationkit.com (First Bird Labs)</managingEditor>
+    <webMaster>info@consultationkit.com (First Bird Labs)</webMaster>
+    <lastBuildDate>Thu, 20 Apr 2017 14:32:08 -0400</lastBuildDate>
+    
+	<atom:link href="http://consultationkit.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>faq</title>
+      <link>http://consultationkit.com/faq/</link>
+      <pubDate>Thu, 20 Apr 2017 14:32:08 -0400</pubDate>
+      <author>info@consultationkit.com (First Bird Labs)</author>
+      <guid>http://consultationkit.com/faq/</guid>
+      <description>How Do I Get the Widget on my Website? Under the Calendar tab you will see a link called Get Embed Code. Click on this link and a popup will come up with a block of code. Copy the entire code block and paste it into the HTML of your website where you want your widget to appear. We also offer free technical assistance getting your widget embedded on your website if you are having problems getting it to look right.</description>
+    </item>
+    
+  </channel>
+</rss>
