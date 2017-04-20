@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <!-- Define content for 3 across -->
+  <!-- TODO pass in the icons as well -->
+  {{$id := "how-it-works"}}
+  {{$title := "How It Works"}}
+  {{$titleSub := "Focus on being the best Consultant, not on whether your client has the right link."}}
+  {{$heading1 := "Clients select a time"}}
+  {{$body1 := "Clients see a timezone adjusted schedule with all of your available times. Never again go back and forth over email about what time works you."}}
+  {{$heading2 := "They pay upfront"}}
+  {{$body2 := "Clients can easily and securely pay using their favorite credit cards. Payments are sent right to your Paypal. Don't worry, consultations can be free as well!"}}
+  {{$heading3 := "We make sure they're ready"}}
+  {{$body3 := "When the time for the consultation approaches we send timely and informative emails with all of the links and information they need to get right into the call."}}
+
+  {{ partial "3-across" (dict "title" $title "id" $id "titleSub" $titleSub "heading1" $heading1 "body1" $body1 "heading2" $heading2 "body2" $body2 "heading3" $heading3 "body3" $body3) }}
+
+  <!-- Define content for 6-bullet -->
+  {{$id := "features"}}
+  {{$title := "Powerful Features"}}
+  {{$titleSub := "Everything you need to streamline your booking process. Set it and forget it"}}
+  {{$heading1 := "Stay In Sync"}}
+  {{$body1 := "We sync directly with your Google Calendar so you never miss a meeting"}}
+  {{$heading2 := "Mobile optimized booking form"}}
+  {{$body2 := "Clients can quickly and easily book time with you from wherever they are"}}
+  {{$heading3 := "Custom availability and control"}}
+  {{$body3 := "Setup custom availability, padding between appointments and appointment duration"}}
+  {{$heading4 := "Reduce no shows with reminders"}}
+  {{$body4 := "Automatic reminders and notifications significantly reduce no shows and admin work"}}
+  {{$heading5 := "Flexible"}}
+  {{$body5 := "Whether you use Google Hangouts, Skype or traditional phone calls, our platform works for you"}}
+  {{$heading6 := "Handle Timezones with ease"}}
+  {{$body6 := "Our booking form easily handles timezone differences, so you never have to worry"}}
+
+  {{ partial "6-bullet" (dict "title" $title "id" $id "titleSub" $titleSub "heading1" $heading1 "body1" $body1 "heading2" $heading2 "body2" $body2 "heading3" $heading3 "body3" $body3 "heading4" $heading4 "body4" $body4 "heading5" $heading5 "body5" $body5 "heading6" $heading6 "body6" $body6) }}
+
+  <!-- Plans -->
+  {{ $priceTagline := "No transaction fees for 30 days"}}
+  {{ $buttonText := "Get Set Up For Free"}}
+  {{ $planDetails := slice "Unlimited Consultations" "Accept Payments Up Front From Clients" "Automatic Reminders" "Integration with 1 Google Calendar" "No Hassle and Easy to Manage"}}
+  <section class="solid-color" id="plans">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-8 col-md-offset-2">
+            {{ partial "plan-details" (dict "price" 0 "Site" .Site "priceTagline" $priceTagline "planDetails" $planDetails "buttonText" $buttonText)}}
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Can there even be content for the homepage? -->
+  {{ .Content }}
+{{ end }}
