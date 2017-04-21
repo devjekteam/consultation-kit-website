@@ -1,4 +1,4 @@
-baseURL = "http://consultationkit.com"
+baseURL = "https://consultationkit.com"
 DefaultContentLanguage = "en"
 languageCode = "en-us"
 title = "Consultation Kit"
