@@ -6,7 +6,8 @@ body {
     background: rgba(51,153,204, 1);
 }
 .see-through-blue{
-    background: rgba(51,153,204, 0.75);
+    background: linear-gradient(rgba(51,153,204, 0.75), rgba(51,153,204, 0.75)), url('../img/bg.jpg');
+    background-size: cover;
 }
 .navbar-brand{
     line-height: 63px;
@@ -43,10 +44,6 @@ body {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
-}
-#home{
-    background: url('../images/bg.jpg');
-    background-size: cover;
 }
 .phone{
     padding: 50px 15px;
