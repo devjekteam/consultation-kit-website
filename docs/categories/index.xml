@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Consultation Kit</title>
-    <link>http://consultationkit.com/categories/</link>
+    <link>https://consultationkit.com/categories/</link>
     <description>Recent content in Categories on Consultation Kit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>info@consultationkit.com (First Bird Labs)</managingEditor>
     <webMaster>info@consultationkit.com (First Bird Labs)</webMaster>
     
-	<atom:link href="http://consultationkit.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://consultationkit.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
