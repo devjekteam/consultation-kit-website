@@ -16,7 +16,7 @@ publishDir = "docs"
   calloutImg = "img/try-callout.png"
   # Header Text
   intro = "Convert your online traffic into paying customers"
-  introTagline = "No hassle consultation bookings. Get paid up front for your time. Leave the meeting logistics to us"
+  introTagline = "No hassle consultation bookings. Get paid up front for your time. Leave the meeting logistics to us."
 
 [Author]
   name = "First Bird Labs"
