@@ -15,10 +15,8 @@ publishDir = "docs"
   # img pointing to calendar
   calloutImg = "img/try-callout.png"
   # Header Text
-  intro = "Stop wasting time with \"free\" calls"
-  introTagline = "Let your potential clients book a paid online consultation with you right from your website"
-
-
+  intro = "Convert your online traffic into paying customers"
+  introTagline = "No hassle consultation bookings. Get paid up front for your time. Leave the meeting logistics to us"
 
 [Author]
   name = "First Bird Labs"
