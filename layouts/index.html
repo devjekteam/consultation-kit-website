@@ -22,18 +22,24 @@
   {{$titleSub := "Everything you need to streamline your booking process. Set it and forget it"}}
   {{$heading1 := "Stay In Sync"}}
   {{$body1 := "We sync directly with your Google Calendar so you never miss a meeting"}}
+  {{$icon1 := "fa-refresh"}}
   {{$heading2 := "Mobile optimized booking form"}}
   {{$body2 := "Clients can quickly and easily book time with you from wherever they are"}}
+  {{$icon2 := "fa-mobile"}}
   {{$heading3 := "Intuative Dashboard"}}
   {{$body3 := "Setup custom availability timeslots, appointment duration, price and more"}}
-  {{$heading4 := "Reduce no shows with reminders"}}
+  {{$icon3 := "fa-gear"}}
+  {{$heading4 := "Automatic client reminders"}}
   {{$body4 := "Automatic reminders and notifications significantly reduce no shows and admin work"}}
+  {{$icon4 := "fa-line-chart"}}
   {{$heading5 := "Hosted calendar webpage"}}
   {{$body5 := "We host a free webpage for you that displays your calendar to give you more flexability and easier integration"}}
+  {{$icon5 := "fa-cloud-upload"}}
   {{$heading6 := "Free Technical Assistance"}}
   {{$body6 := "If you ever need help getting things set up or taken down we will be available to help with technical needs"}}
+  {{$icon6 := "fa-heartbeat"}}
 
-  {{ partial "6-bullet" (dict "title" $title "id" $id "titleSub" $titleSub "heading1" $heading1 "body1" $body1 "heading2" $heading2 "body2" $body2 "heading3" $heading3 "body3" $body3 "heading4" $heading4 "body4" $body4 "heading5" $heading5 "body5" $body5 "heading6" $heading6 "body6" $body6) }}
+  {{ partial "6-bullet" (dict "title" $title "id" $id "titleSub" $titleSub "heading1" $heading1 "body1" $body1 "icon1" $icon1 "heading2" $heading2 "body2" $body2 "icon2" $icon2 "heading3" $heading3 "body3" $body3 "icon3" $icon3 "heading4" $heading4 "body4" $body4 "icon4" $icon4 "heading5" $heading5 "body5" $body5 "icon5" $icon5 "heading6" $heading6 "body6" $body6 "icon6" $icon6) }}
 
   <!-- Plans -->
   {{ $priceTagline := "No transaction fees for 30 days"}}
